@@ -20,7 +20,7 @@ public class JSExecutor {
         //Javascript executor
         JavascriptExecutor js = (JavascriptExecutor)driver;
 
-      WebElement scroll_page = driver.findElement(By.xpath("//div[@id='userName']"));
+        WebElement scroll_page = driver.findElement(By.xpath("//div[@id='userName']"));
         js.executeScript("arguments[0].scrollIntoView();", scroll_page);
         driver.quit();
 
