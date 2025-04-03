@@ -39,6 +39,7 @@ public class Selenium05_iDriveEnterprise {
        WebElement text_message = driver.findElement(By.xpath("//h5[text()='Your free trial has expired']"));
 
        String Actual_Title = text_message.getText();
+
         if (Actual_Title.equals(Expected_title)){
 
             System.out.println("Test case passed!");
